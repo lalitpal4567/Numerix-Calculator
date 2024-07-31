@@ -1,0 +1,108 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+.app-name {
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.main-container {
+    padding: 10px 10px;
+    max-width: 350px;
+    width: 100%;
+}
+
+.container {
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.4);
+}
+
+.display {
+    height: 100px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    text-align: right;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    font-family: sans-serif;
+    font-size: 17px;
+    padding: 5px 2px;
+}
+
+.inputValue {
+    padding: 5px;
+}
+
+.result {
+    padding: 5px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    font-size: 25px;
+}
+
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 60px);
+}
+
+.equal {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.key {
+    padding: 15px;
+    border: 1px solid white;
+    background-color: rgb(248, 248, 248);
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.key:hover {
+    background-color: rgb(243, 251, 251);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.theme-toggle {
+    margin-bottom: 20px;
+    border: solid 0px;
+}
+.theme-toggle button{
+    border: 0px;
+    padding: 2px 4px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+.key-dark-theme {
+    background-color: #444;
+    color: #fff;
+    border-color: #666;
+}
+.key-dark-theme:hover{
+    color: black;
+}
